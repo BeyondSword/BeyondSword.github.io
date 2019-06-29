@@ -11,9 +11,12 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 ```markdown
 Syntax highlighted code block
 
-# Header 1
+# Leetcode链表解题思路总结
 ## Header 2
 ### Header 3
+1.第一类题
+	求链表的中点 =》 利用快慢指针
+
 
 - Bulleted
 - List
