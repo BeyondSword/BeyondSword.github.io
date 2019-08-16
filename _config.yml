@@ -1,6 +1,9 @@
 theme: jekyll-theme-cayman
 title: Welcome to the Andy's homepage!
-github:
-  repository_name: andy
-  repository_url: beyondsword
-  repository: aaa
+# github:
+  # repository_name: BeyondSword.github.io
+  # repository_url: BeyondSword.github.io
+  # repository: BeyondSword.github.io
+
+# PAGES_REPO_NWO: aaa
+repository: fangchd/fangchd.github.io
