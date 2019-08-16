@@ -1,2 +1,6 @@
 theme: jekyll-theme-cayman
 title: Welcome to the Andy's homepage!
+github:
+  repository_name: andy
+  repository_url: beyondsword
+  repository: aaa
