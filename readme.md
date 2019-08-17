@@ -10,4 +10,5 @@ plan 2019.8.16:
 -bundle exec jekyll serve 来本地调试
 -出现repo name not found 问题， _config.yml添加repository: BeyondSword/BeyondSword.github.io解决
 
-3.post分类
+3.添加导航栏
+4.post分类
