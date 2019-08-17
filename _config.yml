@@ -1,5 +1,5 @@
-theme: jekyll-theme-cayman
-title: Welcome to the Andy's homepage!
+theme: minima
+title: Welcome to BeyondSword's homepage!
 # github:
   # repository_name: BeyondSword.github.io
   # repository_url: BeyondSword.github.io
@@ -7,3 +7,13 @@ title: Welcome to the Andy's homepage!
 
 # PAGES_REPO_NWO: aaa
 repository: BeyondSword/BeyondSword.github.io
+
+# nav
+header_pages:
+  - blog/index.html
+  - index.html
+
+# Minima date format
+# refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
+minima:
+  date_format: "%b %-d, %Y"
