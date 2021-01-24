@@ -19,3 +19,7 @@ plan 2019.8.16:
 
 
 2020.1.24 重新开始
+此项目利用GitHub pages 功能部署自己的blog，该功能作为过渡使用。
+目前访问使用url: https://beyondsword.github.io/
+
+梳理：post中存放文章以markdown格式。
