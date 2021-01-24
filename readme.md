@@ -22,4 +22,15 @@ plan 2019.8.16:
 此项目利用GitHub pages 功能部署自己的blog，该功能作为过渡使用。
 目前访问使用url: https://beyondsword.github.io/
 
-梳理：post中存放文章以markdown格式。
+梳理：post中存放文章以markdown格式。 目前使用jekyll来自定义网站页面（官方推荐），jekyll是一个静态网站生成器。
+github pages sites 不能改变的固定配置如下：
+lsi: false
+safe: true
+source: [your repo's top level directory]
+incremental: false
+highlighter: rouge
+gist:
+  noscript: false
+kramdown:
+  math_engine: mathjax
+  syntax_highlighter: rouge
