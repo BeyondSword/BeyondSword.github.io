@@ -6,3 +6,7 @@ title: 开发进度
 
 1.博客内容的分类。
 2.页内跳转的实现。
+3.中文显示的问题。
+4.主题使用。
+**搭建本地调试环境（需要ruby环境）
+第一个主题：Minimal Mistakes Jekyll theme
