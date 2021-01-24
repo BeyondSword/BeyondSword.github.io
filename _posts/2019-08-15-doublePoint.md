@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: posts
 title: "双指针问题"
 date: 2019-08-15
 ---
