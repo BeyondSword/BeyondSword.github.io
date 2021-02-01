@@ -1,6 +1,7 @@
-- name: Home
-  link: /
-- name: About
-  link: /about.html
-  name: 博客
-  link: /blog.html
+main:
+  - title: "导航栏的测试"
+    url: /
+  - title: "文章"
+    url: /year/
+  - title: "category"
+    url: /categories/
