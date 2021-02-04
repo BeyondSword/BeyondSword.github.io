@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: 链表题型总结
 ---
 ## linked list 链表总结

@@ -219,6 +219,7 @@ plugins:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-archives
 
 # mimic GitHub Pages with --safe
 whitelist:
@@ -245,6 +246,10 @@ category_archive:
 tag_archive:
   type: liquid
   path: /tags/
+#year_archive:
+  #type: liquid
+  #path: /year/
+
 # https://github.com/jekyll/jekyll-archives
 # jekyll-archives:
 #   enabled:
@@ -267,7 +272,7 @@ compress_html:
 
 
 # Defaults
-#模板做统一化配置处理
+#文章模板做统一化配置处理
 defaults:
   # _posts
   - scope:
@@ -282,5 +287,5 @@ defaults:
       related: true
       show_date: true #显示文章编辑时间,怎么样显示中文?（本地化）
       toc: true #文章导航栏
-      toc_label: "My Table of Contents" #用于重载ui的标签
-      toc_icon: "cog" #用于重载图标
+      toc_label: "索引栏" #用于重载ui的标签
+      toc_icon: "angry" #用于重载图标
