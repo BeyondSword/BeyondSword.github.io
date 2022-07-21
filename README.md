@@ -1,32 +1,36 @@
-## 使用 github pages 记录PAT复习
-
-
 1.blog 下存放blog 索引
 2._posts下存放具体的博客内容
 
+
+
+
+# 访问 https://beyondsword.github.io/
+
+
 # 准备知识
-ruby : 一种脚本语言
+ruby : 编程语言
 
-gem : 包名
+gem : ruby中的包名
 
-bundle/bundler： 包管理工具， 一回事。
+bundle/bundler： 包管理工具， 两者一回事。
 
-bundler ： 和bundle的区别是什么？
+jekyll：一个静态网站生成器。
 
-(jekyll)
+bundle install: 读取 gemfile 安装 gem。
 
-# 依赖
-基于ruby构建， 需要ruby的基础环境。
-
-bundle install  来构建 gem
-
-ruby存在原始源速度很慢的问题，需要进行换源。
-参考 https://gems.ruby-china.com/ 提供了中国镜像。
-
-https://jekyllrb.com/ 是核心组件，首先要完成jekyll的安装:
+# 构建
+1. 检查ruby的安装情况
 ```
-gem install bundler jekyll
+ruby -v
 ```
+
+2. 安装必要插件(读取 Gemfile)
+```
+bundle install
+```
+ruby存在原始源速度很慢的问题，需要进行换源。使用 https://gems.ruby-china.com/ 提供的中国镜像源。
+
+3. 使用 minimal-mistakes 这一主题
 
 
 plan 2019.8.16:
@@ -43,7 +47,7 @@ plan 2019.8.16:
 
 2020.1.24 重新开始
 此项目利用GitHub pages 功能部署自己的blog，该功能作为过渡使用。
-目前访问使用url: https://beyondsword.github.io/
+
 
 梳理：post中存放文章以markdown格式。 目前使用jekyll来自定义网站页面（官方推荐），jekyll是一个静态网站生成器。
 github pages sites 不能改变的固定配置如下：
