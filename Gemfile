@@ -12,7 +12,8 @@
 
 #远程gem包管理
 
-source "https://rubygems.org"
+#source "https://rubygems.org"
+source "https://gems.ruby-china.com/"
 #gem "minimal-mistakes-jekyll"
 #gem "github-pages", group: :jekyll_plugins
 gem "jekyll-include-cache", group: :jekyll_plugins
