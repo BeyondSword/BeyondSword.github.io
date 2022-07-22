@@ -16,7 +16,7 @@ theme                  : "minimal-mistakes-jekyll"
 minimal_mistakes_skin    : "mint" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "zh-CN"
+locale                   : "zh"   #本地化
 title                    : "锵锵锵的个人博客"
 title_separator          : "-"
 subtitle                 : "Version 0.1" # site tagline that appears below site title in masthead
@@ -210,7 +210,7 @@ sass:
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins (previously gems:)
@@ -273,21 +273,28 @@ compress_html:
 
 
 # Defaults
-#文章模板做统一化配置处理
+#文章的根布局
 defaults:
-  # _posts
   - scope:
       path: ""
       type: posts
     values:
       layout: single
-      author_profile: true
+      #author_profile: true
+      author_profile: false
       read_time: true #显示阅读所需时间
       comments: true
-      share: true
+      share: false
       related: true
       show_date: true #显示文章编辑时间,能否显示中文?（本地化）
       date_format: "%Y-%m-%d" #编辑格式, TODO 不生效
-      toc: true #文章导航栏
+      #########导航栏#########
+      #toc: true #文章导航栏
       toc_label: "索引栏" #用于重载ui的标签
-      toc_icon: "angry" #用于重载图标
+      toc_icon: "bars" #用于重载图标
+      #toc_sticky: true #是否固定在屏幕顶部
+      #######################
+
+      #左侧边栏的导航模式
+      sidebar:
+        nav: "docs"

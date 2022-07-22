@@ -1,9 +1,3 @@
-1.blog 下存放blog 索引
-2._posts下存放具体的博客内容
-
-
-
-
 # 访问 https://beyondsword.github.io/
 
 
@@ -61,3 +55,7 @@ gist:
 kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
+
+
+
+canonical_url
