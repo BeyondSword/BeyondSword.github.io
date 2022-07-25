@@ -1,6 +1,7 @@
 ---
 layout: single
 title: "双指针问题"
+categories: 算法学习
 ---
 
 

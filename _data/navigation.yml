@@ -3,8 +3,8 @@
 
 # 顶部导航栏
 main:
-  - title: "时间"
-    url: /year/
+  #- title: "时间"
+  #  url: /year/
   - title: "分类"
     url: /categories/
   - title: "搜索"
