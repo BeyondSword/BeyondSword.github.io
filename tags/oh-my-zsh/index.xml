@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>oh-my-zsh on JJJ的博客</title><link>https://BeyondSword.github.io/tags/oh-my-zsh/</link><description>Recent content in oh-my-zsh on JJJ的博客</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BeyondSword.github.io/tags/oh-my-zsh/index.xml" rel="self" type="application/rss+xml"/><item><title>强大命令行 ZSH 的使用心得</title><link>https://BeyondSword.github.io/p/%E5%BC%BA%E5%A4%A7%E5%91%BD%E4%BB%A4%E8%A1%8C-zsh-%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</link><pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate><guid>https://BeyondSword.github.io/p/%E5%BC%BA%E5%A4%A7%E5%91%BD%E4%BB%A4%E8%A1%8C-zsh-%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</guid><description>&lt;p>打造一个高效的命令行对程序员提高工作效率十分重要，下面总结一下zsh使用的一些心得。&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;!-- raw HTML omitted -->
+&lt;h2 id="简介">简介&lt;/h2>
+&lt;p>简单介绍： macbook 的默认shell环境，功能比bash等更为强大。需要配合 oh-my-zsh 使用。&lt;/p>
+&lt;h2 id="安装上手">安装上手&lt;/h2>
+&lt;ol>
+&lt;li>安装 zsh
+linux 下直接使用 apt 安装即可。
+macbook 原生自带。&lt;/li>
+&lt;li>oh-my-zsh
+一个zsh的配置工具， 能很好地解决 zsh 配置繁琐的问题。&lt;/li>
+&lt;/ol>
+&lt;h2 id="主题推荐">主题推荐&lt;/h2></description></item></channel></rss>
