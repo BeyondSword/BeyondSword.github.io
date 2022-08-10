@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on Example Site</title>
+        <link>https://example.com/posts/</link>
+        <description>Recent content in Posts on Example Site</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language><atom:link href="https://example.com/posts/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title></title>
+        <link>https://example.com/posts/2022-8-1-macbook%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%8E%AF%E5%A2%83/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/posts/2022-8-1-macbook%E5%91%BD%E4%BB%A4%E8%A1%8C%E7%8E%AF%E5%A2%83/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>2021新年计划</title>
+        <link>https://example.com/posts/2021-01-24-plan/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/posts/2021-01-24-plan/</guid>
+        <description>&lt;h3 id=&#34;新年新气象新年新规划定下几个小目标希望能在新年实现&#34;&gt;新年新气象，新年新规划。定下几个小目标，希望能在新年实现。&lt;/h3&gt;
+&lt;p&gt;正念：提高自己的做事效率，减少过量无效信息的获取。寻找一种有效的集中专注力的方法。减少手机上无谓的短信息获取。&lt;/p&gt;
+&lt;h4 id=&#34;21-更新&#34;&gt;2.1 更新&lt;/h4&gt;
+&lt;p&gt;工作日删除一些信息获取的App，提高工作效率和时间利用率。&lt;/p&gt;
+&lt;p&gt;技术积累1：维护自己的博客，做一些技术总结以及生活感想的记录，在这个过程中也积累python的语言熟练度。暂时通过github pages功能进行维护，
+后续计划转向自主建站。&lt;/p&gt;
+&lt;p&gt;技术积累2：初步研究低频量化的股票操作系统。&lt;/p&gt;
+&lt;p&gt;技术积累3：可以研究一下游戏中一些简单脚本语言的使用，如lua等。&lt;/p&gt;
+&lt;p&gt;想看的书：《自私的基因》、 《希腊神话》 、 《人间词话》 、《金融炼金术》&lt;/p&gt;
+&lt;p&gt;技术总结内容：1.git的使用 2.是否还是要考虑linux系统？&lt;/p&gt;
+&lt;h4 id=&#34;21更新&#34;&gt;2.1更新&lt;/h4&gt;
+&lt;p&gt;身体管理上：
+增重到65kg，维持目前13-15%的体脂率尽量不变。目前62kg左右，还有3kg的增重目标。期望在3.1之前达成体重目标（充分利用好春节假期）&lt;/p&gt;
+&lt;h4 id=&#34;21更新-1&#34;&gt;2.1更新&lt;/h4&gt;
+&lt;p&gt;最近有所懈怠，锻炼频率下降，摄入不足，导致体重徘徊不前。周末起床过晚也会影响全天的热量摄入。要加油！&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
