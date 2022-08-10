@@ -1,14 +1,20 @@
 ---
 title: "强大命令行 ZSH 的使用心得"
 description: "工欲善其事，必先利其器"
-date: 2022-08-01T22:18:59+08:00
+date: 2022-08-01
 # 实际发布测试
 draft: false
 categories: CLI
-tags: [zsh, 命令行]
-lastmod: 2022-08-10T11:28:33+08:00
+tags: [zsh, oh-my-zsh, 命令行]
+# lastmod from Stack
+lastmod: 2022-08-10
 # lastmod: 11:30:38 AM
 license: false
+links:
+  - title: oh-my-zsh
+    description: Unleash your terminal like never before.
+    website: https://ohmyz.sh/
+    image: https://ohmyz.sh/img/OMZLogo_BnW.png
 ---
 
 打造一个高效的命令行对程序员提高工作效率十分重要，下面总结一下zsh使用的一些心得。

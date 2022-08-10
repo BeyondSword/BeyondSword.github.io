@@ -10,12 +10,13 @@ links:
     website: https://www.typescriptlang.org
     image: ts-logo-128.jpg
 menu:
-    main: 
+    main:
         weight: -50
         params:
             icon: link
 
 comments: false
+draft: true
 ---
 
 To use this feature, add `links` section to frontmatter.
