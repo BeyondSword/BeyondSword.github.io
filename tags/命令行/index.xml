@@ -8,6 +8,7 @@
 &lt;li>安装 zsh
 linux 下直接使用 apt 安装即可。
 macbook 原生自带。&lt;/li>
-&lt;li>oh-my-zsh&lt;/li>
+&lt;li>oh-my-zsh
+一个zsh的配置工具， 能很好地解决 zsh 配置繁琐的问题。&lt;/li>
 &lt;/ol>
 &lt;h2 id="主题推荐">主题推荐&lt;/h2></description></item></channel></rss>

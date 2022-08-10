@@ -1,17 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on JJJ的博客</title><link>https://BeyondSword.github.io/post/</link><description>Recent content in Posts on JJJ的博客</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 01 Aug 2022 22:18:59 +0800</lastBuildDate><atom:link href="https://BeyondSword.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>强大命令行 ZSH 的使用心得</title><link>https://BeyondSword.github.io/p/%E5%BC%BA%E5%A4%A7%E5%91%BD%E4%BB%A4%E8%A1%8C-zsh-%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</link><pubDate>Mon, 01 Aug 2022 22:18:59 +0800</pubDate><guid>https://BeyondSword.github.io/p/%E5%BC%BA%E5%A4%A7%E5%91%BD%E4%BB%A4%E8%A1%8C-zsh-%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</guid><description>&lt;p>打造一个高效的命令行对程序员提高工作效率十分重要，下面总结一下zsh使用的一些心得。&lt;/p>
-&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->
-&lt;h2 id="简介">简介&lt;/h2>
-&lt;p>简单介绍： macbook 的默认shell环境，功能比bash等更为强大。需要配合 oh-my-zsh 使用。&lt;/p>
-&lt;h2 id="安装上手">安装上手&lt;/h2>
-&lt;ol>
-&lt;li>安装 zsh
-linux 下直接使用 apt 安装即可。
-macbook 原生自带。&lt;/li>
-&lt;li>oh-my-zsh
-一个zsh的配置工具， 能很好地解决 zsh 配置繁琐的问题。&lt;/li>
-&lt;/ol>
-&lt;h2 id="主题推荐">主题推荐&lt;/h2></description></item><item><title>Markdown Syntax Guide</title><link>https://BeyondSword.github.io/p/markdown-syntax-guide/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><guid>https://BeyondSword.github.io/p/markdown-syntax-guide/</guid><description>&lt;img src="https://BeyondSword.github.io/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post Markdown Syntax Guide" />&lt;p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Markdown on JJJ的博客</title><link>https://BeyondSword.github.io/categories/markdown/</link><description>Recent content in Markdown on JJJ的博客</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://BeyondSword.github.io/categories/markdown/index.xml" rel="self" type="application/rss+xml"/><item><title>Markdown Syntax Guide</title><link>https://BeyondSword.github.io/p/markdown-syntax-guide/</link><pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate><guid>https://BeyondSword.github.io/p/markdown-syntax-guide/</guid><description>&lt;img src="https://BeyondSword.github.io/p/markdown-syntax-guide/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post Markdown Syntax Guide" />&lt;p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p>
 &lt;h2 id="headings">Headings&lt;/h2>
 &lt;p>The following HTML &lt;code>&amp;lt;h1&amp;gt;&lt;/code>—&lt;code>&amp;lt;h6&amp;gt;&lt;/code> elements represent six levels of section headings. &lt;code>&amp;lt;h1&amp;gt;&lt;/code> is the highest section level while &lt;code>&amp;lt;h6&amp;gt;&lt;/code> is the lowest.&lt;/p>
 &lt;h1 id="h1">H1&lt;/h1>
