@@ -16,4 +16,4 @@ hugo bundle 组织posts
 
 
 
-尝试进行部署
+1.尝试进行部署
