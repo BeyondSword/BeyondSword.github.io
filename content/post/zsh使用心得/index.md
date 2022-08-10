@@ -23,5 +23,6 @@ license: false
     linux 下直接使用 apt 安装即可。
     macbook 原生自带。
 2. oh-my-zsh
+一个zsh的配置工具， 能很好地解决 zsh 配置繁琐的问题。
 
 ## 主题推荐
