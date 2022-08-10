@@ -22,6 +22,6 @@ license: false
 1. 安装 zsh
     linux 下直接使用 apt 安装即可。
     macbook 原生自带。
-2. oh-my-
+2. oh-my-zsh
 
 ## 主题推荐
