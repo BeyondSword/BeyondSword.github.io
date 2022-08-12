@@ -2,12 +2,13 @@
 title: "强大命令行 ZSH 的使用心得"
 description: "工欲善其事，必先利其器"
 date: 2022-08-01
+# image: https://cdn.jsdelivr.net/gh/BeyondSword/blogImage@main/img/1.jpg
 # 实际发布测试
 draft: false
 categories: CLI
-tags: [zsh, oh-my-zsh, 命令行]
+tags: [zsh, oh-my-zsh, 命令行, 提高效率]
 # lastmod from Stack
-lastmod: 2022-08-10
+lastmod: 2022-08-12
 # lastmod: 11:30:38 AM
 license: false
 links:
@@ -19,16 +20,64 @@ links:
 
 打造一个高效的命令行对程序员提高工作效率十分重要，下面总结一下zsh使用的一些心得。
 
-<!-- ![](https://cdn.jsdelivr.net/gh/BeyondSword/blogImage@main/img/Screenshot from 2022-08-08 11-41-59.png) -->
-<!-- ![](https://cdn.jsdelivr.net/gh/BeyondSword/blogImage@main/img/logo.jpg) -->
 ## 简介
-简单介绍： macbook 的默认shell环境，功能比bash等更为强大。需要配合 oh-my-zsh 使用。
+功能比 bash 等更为强大的一个 shell。配合 oh-my-zsh 使用来简化其配置。
 
-## 安装上手
-1. 安装 zsh
-    linux 下直接使用 apt 安装即可。
-    macbook 原生自带。
-2. oh-my-zsh
-一个zsh的配置工具， 能很好地解决 zsh 配置繁琐的问题。
+## Ubuntu等Debian系
+### 安装 zsh
+```
+sudo apt install zsh
+```
+查看是否系统已经支持的shell,如果有zsh就已经安装成功：
+```
+cat /etc/shells
+```
 
-## 主题推荐
+### 配置 oh-my-zsh
+执行脚本安装：
+```
+sh -c "$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)"
+```
+oh-my-zsh提供了一系列丰富的主题和插件，默认在`~/.oh-my-zsh/themes`中可以找到。
+要使其生效我们要修改`~/.oh-my-zsh`——zsh配置文件。
+修改`ZSH_THEME`字段启用主题：
+![](2022-08-12-15-38-13.png)
+修改`plugins`字段启用插件：
+![](2022-08-12-15-31-35.png)
+
+
+根据个人喜好选择喜欢的[主题](https://github.com/ohmyzsh/ohmyzsh/wiki/Themes)即可，默认主题其实也算好用。
+
+### 插件推荐
+#### zsh-autosuggestions
+自动补全（需要安装）：
+```
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+#### copyfile
+把文件内容拷贝到系统剪辑板：
+```
+copyfile SRC
+```
+#### copypath
+把路径拷贝到系统剪辑板，缺省时拷贝当前路径：
+```
+copypath [SRC]
+```
+#### extract
+解决令人头秃的解压命令：
+
+#### omz reload
+omz下有一系列`oh my zsh`自带的命令，这一条可以快速重载`zsh`配置
+
+#### colored-man-pages
+显示彩色的系统手册
+
+#### rand-quote
+随机格言，配合cowsay，可以实现牛说格言效果：
+```
+sudo apt install cowsay
+echo "quote|cowsay" >> ~/.zshrc
+```
+每次打开终端效果如下：
+![](2022-08-12-16-52-11.png)
