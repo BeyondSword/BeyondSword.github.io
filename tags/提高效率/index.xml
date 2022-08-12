@@ -1,17 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>提高效率 on JJJ的博客</title><link>https://BeyondSword.github.io/tags/%E6%8F%90%E9%AB%98%E6%95%88%E7%8E%87/</link><description>Recent content in 提高效率 on JJJ的博客</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BeyondSword.github.io/tags/%E6%8F%90%E9%AB%98%E6%95%88%E7%8E%87/index.xml" rel="self" type="application/rss+xml"/><item><title>强大命令行 ZSH 的使用心得</title><link>https://BeyondSword.github.io/p/%E5%BC%BA%E5%A4%A7%E5%91%BD%E4%BB%A4%E8%A1%8C-zsh-%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</link><pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate><guid>https://BeyondSword.github.io/p/%E5%BC%BA%E5%A4%A7%E5%91%BD%E4%BB%A4%E8%A1%8C-zsh-%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</guid><description>&lt;p>打造一个高效的命令行对程序员提高工作效率十分重要，下面总结一下zsh使用的一些心得。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>提高效率 on JJJ的博客</title><link>https://BeyondSword.github.io/tags/%E6%8F%90%E9%AB%98%E6%95%88%E7%8E%87/</link><description>Recent content in 提高效率 on JJJ的博客</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BeyondSword.github.io/tags/%E6%8F%90%E9%AB%98%E6%95%88%E7%8E%87/index.xml" rel="self" type="application/rss+xml"/><item><title>强大命令行 ZSH 的使用心得</title><link>https://BeyondSword.github.io/p/%E5%BC%BA%E5%A4%A7%E5%91%BD%E4%BB%A4%E8%A1%8C-zsh-%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</link><pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate><guid>https://BeyondSword.github.io/p/%E5%BC%BA%E5%A4%A7%E5%91%BD%E4%BB%A4%E8%A1%8C-zsh-%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</guid><description>&lt;p>打造一个高效的命令行对程序员提高工作效率十分重要，下面总结一下&lt;code>zsh&lt;/code>的使用心得。&lt;/p>
 &lt;h2 id="简介">简介&lt;/h2>
-&lt;p>功能比 bash 等更为强大的一个 shell。配合 oh-my-zsh 使用来简化其配置。&lt;/p>
+&lt;p>功能比&lt;code>bash&lt;/code>等更为强大的一个&lt;code>shell&lt;/code>。配合&lt;code>oh-my-zsh&lt;/code>使用来简化其配置。&lt;/p>
 &lt;h2 id="ubuntu等debian系">Ubuntu等Debian系&lt;/h2>
 &lt;h3 id="安装-zsh">安装 zsh&lt;/h3>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo apt install zsh
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>查看是否系统已经支持的shell,如果有zsh就已经安装成功：&lt;/p>
+&lt;p>查看是否系统已经支持的&lt;code>shell&lt;/code>,如果有&lt;code>zsh&lt;/code>就表示已经存在了：&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -19,6 +11,25 @@
 &lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">cat /etc/shells
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://BeyondSword.github.io/p/%E5%BC%BA%E5%A4%A7%E5%91%BD%E4%BB%A4%E8%A1%8C-zsh-%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/2022-08-12-16-59-57.png"
+width="786"
+height="533"
+srcset="https://BeyondSword.github.io/p/%E5%BC%BA%E5%A4%A7%E5%91%BD%E4%BB%A4%E8%A1%8C-zsh-%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/2022-08-12-16-59-57_hub5be603a6fce3b25ae78946b336ee069_44647_480x0_resize_box_3.png 480w, https://BeyondSword.github.io/p/%E5%BC%BA%E5%A4%A7%E5%91%BD%E4%BB%A4%E8%A1%8C-zsh-%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/2022-08-12-16-59-57_hub5be603a6fce3b25ae78946b336ee069_44647_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="147"
+data-flex-basis="353px"
+>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-mysql" data-lang="mysql">&lt;span class="line">&lt;span class="cl">&lt;span class="err">如果没有安装则可以使用&lt;/span>&lt;span class="o">`&lt;/span>&lt;span class="n">apt&lt;/span>&lt;span class="o">`&lt;/span>&lt;span class="err">安装&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">sudo&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">apt&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">install&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">zsh&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h3 id="配置-oh-my-zsh">配置 oh-my-zsh&lt;/h3>
 &lt;p>执行脚本安装：&lt;/p>
@@ -86,7 +97,7 @@ data-flex-basis="353px"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h4 id="extract">extract&lt;/h4>
-&lt;p>解决令人头秃的解压命令：&lt;/p>
+&lt;p>解决令人头秃的解压命令&lt;/p>
 &lt;h4 id="omz-reload">omz reload&lt;/h4>
 &lt;p>omz下有一系列&lt;code>oh my zsh&lt;/code>自带的命令，这一条可以快速重载&lt;code>zsh&lt;/code>配置&lt;/p>
 &lt;h4 id="colored-man-pages">colored-man-pages&lt;/h4>
