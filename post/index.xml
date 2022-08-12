@@ -1,14 +1,115 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on JJJ的博客</title><link>https://BeyondSword.github.io/post/</link><description>Recent content in Posts on JJJ的博客</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 01 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://BeyondSword.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>强大命令行 ZSH 的使用心得</title><link>https://BeyondSword.github.io/p/%E5%BC%BA%E5%A4%A7%E5%91%BD%E4%BB%A4%E8%A1%8C-zsh-%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</link><pubDate>Mon, 01 Aug 2022 00:00:00 +0000</pubDate><guid>https://BeyondSword.github.io/p/%E5%BC%BA%E5%A4%A7%E5%91%BD%E4%BB%A4%E8%A1%8C-zsh-%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/</guid><description>&lt;p>打造一个高效的命令行对程序员提高工作效率十分重要，下面总结一下zsh使用的一些心得。&lt;/p>
-&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->
 &lt;h2 id="简介">简介&lt;/h2>
-&lt;p>简单介绍： macbook 的默认shell环境，功能比bash等更为强大。需要配合 oh-my-zsh 使用。&lt;/p>
-&lt;h2 id="安装上手">安装上手&lt;/h2>
-&lt;ol>
-&lt;li>安装 zsh
-linux 下直接使用 apt 安装即可。
-macbook 原生自带。&lt;/li>
-&lt;li>oh-my-zsh
-一个zsh的配置工具， 能很好地解决 zsh 配置繁琐的问题。&lt;/li>
-&lt;/ol>
-&lt;h2 id="主题推荐">主题推荐&lt;/h2></description></item></channel></rss>
+&lt;p>功能比 bash 等更为强大的一个 shell。配合 oh-my-zsh 使用来简化其配置。&lt;/p>
+&lt;h2 id="ubuntu等debian系">Ubuntu等Debian系&lt;/h2>
+&lt;h3 id="安装-zsh">安装 zsh&lt;/h3>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo apt install zsh
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>查看是否系统已经支持的shell,如果有zsh就已经安装成功：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">cat /etc/shells
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="配置-oh-my-zsh">配置 oh-my-zsh&lt;/h3>
+&lt;p>执行脚本安装：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sh -c &amp;#34;$(wget https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh -O -)&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>oh-my-zsh提供了一系列丰富的主题和插件，默认在&lt;code>~/.oh-my-zsh/themes&lt;/code>中可以找到。
+要使其生效我们要修改&lt;code>~/.oh-my-zsh&lt;/code>——zsh配置文件。
+修改&lt;code>ZSH_THEME&lt;/code>字段启用主题：
+&lt;img src="https://BeyondSword.github.io/p/%E5%BC%BA%E5%A4%A7%E5%91%BD%E4%BB%A4%E8%A1%8C-zsh-%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/2022-08-12-15-38-13.png"
+width="786"
+height="533"
+srcset="https://BeyondSword.github.io/p/%E5%BC%BA%E5%A4%A7%E5%91%BD%E4%BB%A4%E8%A1%8C-zsh-%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/2022-08-12-15-38-13_huef92623eb28b444a14cd657a58b90a19_106139_480x0_resize_box_3.png 480w, https://BeyondSword.github.io/p/%E5%BC%BA%E5%A4%A7%E5%91%BD%E4%BB%A4%E8%A1%8C-zsh-%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/2022-08-12-15-38-13_huef92623eb28b444a14cd657a58b90a19_106139_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="147"
+data-flex-basis="353px"
+>
+修改&lt;code>plugins&lt;/code>字段启用插件：
+&lt;img src="https://BeyondSword.github.io/p/%E5%BC%BA%E5%A4%A7%E5%91%BD%E4%BB%A4%E8%A1%8C-zsh-%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/2022-08-12-15-31-35.png"
+width="786"
+height="533"
+srcset="https://BeyondSword.github.io/p/%E5%BC%BA%E5%A4%A7%E5%91%BD%E4%BB%A4%E8%A1%8C-zsh-%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/2022-08-12-15-31-35_hu6de84d0c58147b62213b54548741cbed_91027_480x0_resize_box_3.png 480w, https://BeyondSword.github.io/p/%E5%BC%BA%E5%A4%A7%E5%91%BD%E4%BB%A4%E8%A1%8C-zsh-%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/2022-08-12-15-31-35_hu6de84d0c58147b62213b54548741cbed_91027_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="147"
+data-flex-basis="353px"
+>&lt;/p>
+&lt;p>根据个人喜好选择喜欢的&lt;a class="link" href="https://github.com/ohmyzsh/ohmyzsh/wiki/Themes" target="_blank" rel="noopener"
+>主题&lt;/a>即可，默认主题其实也算好用。&lt;/p>
+&lt;h3 id="插件推荐">插件推荐&lt;/h3>
+&lt;h4 id="zsh-autosuggestions">zsh-autosuggestions&lt;/h4>
+&lt;p>自动补全（需要安装）：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="copyfile">copyfile&lt;/h4>
+&lt;p>把文件内容拷贝到系统剪辑板：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">copyfile SRC
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="copypath">copypath&lt;/h4>
+&lt;p>把路径拷贝到系统剪辑板，缺省时拷贝当前路径：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">copypath [SRC]
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h4 id="extract">extract&lt;/h4>
+&lt;p>解决令人头秃的解压命令：&lt;/p>
+&lt;h4 id="omz-reload">omz reload&lt;/h4>
+&lt;p>omz下有一系列&lt;code>oh my zsh&lt;/code>自带的命令，这一条可以快速重载&lt;code>zsh&lt;/code>配置&lt;/p>
+&lt;h4 id="colored-man-pages">colored-man-pages&lt;/h4>
+&lt;p>显示彩色的系统手册&lt;/p>
+&lt;h4 id="rand-quote">rand-quote&lt;/h4>
+&lt;p>随机格言，配合cowsay，可以实现牛说格言效果：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">sudo apt install cowsay
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">echo &amp;#34;quote|cowsay&amp;#34; &amp;gt;&amp;gt; ~/.zshrc
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>每次打开终端效果如下：
+&lt;img src="https://BeyondSword.github.io/p/%E5%BC%BA%E5%A4%A7%E5%91%BD%E4%BB%A4%E8%A1%8C-zsh-%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/2022-08-12-16-52-11.png"
+width="786"
+height="533"
+srcset="https://BeyondSword.github.io/p/%E5%BC%BA%E5%A4%A7%E5%91%BD%E4%BB%A4%E8%A1%8C-zsh-%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/2022-08-12-16-52-11_hu7555b09ba65c32fc71eff5ec3b1644ce_37374_480x0_resize_box_3.png 480w, https://BeyondSword.github.io/p/%E5%BC%BA%E5%A4%A7%E5%91%BD%E4%BB%A4%E8%A1%8C-zsh-%E7%9A%84%E4%BD%BF%E7%94%A8%E5%BF%83%E5%BE%97/2022-08-12-16-52-11_hu7555b09ba65c32fc71eff5ec3b1644ce_37374_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="147"
+data-flex-basis="353px"
+>&lt;/p></description></item></channel></rss>
