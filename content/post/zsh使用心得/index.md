@@ -3,7 +3,7 @@ title: "强大命令行 ZSH 的使用心得"
 description: "工欲善其事，必先利其器"
 date: 2022-08-01
 # image: https://cdn.jsdelivr.net/gh/BeyondSword/blogImage@main/img/1.jpg
-# 实际发布测试
+# draft开启不会实际发布
 draft: false
 categories: CLI
 tags: [zsh, oh-my-zsh, 命令行, 提高效率]
@@ -18,19 +18,21 @@ links:
     image: https://ohmyz.sh/img/OMZLogo_BnW.png
 ---
 
-打造一个高效的命令行对程序员提高工作效率十分重要，下面总结一下zsh使用的一些心得。
+打造一个高效的命令行对程序员提高工作效率十分重要，下面总结一下`zsh`的使用心得。
 
 ## 简介
-功能比 bash 等更为强大的一个 shell。配合 oh-my-zsh 使用来简化其配置。
+功能比`bash`等更为强大的一个`shell`。配合`oh-my-zsh`使用来简化其配置。
 
 ## Ubuntu等Debian系
 ### 安装 zsh
-```
-sudo apt install zsh
-```
-查看是否系统已经支持的shell,如果有zsh就已经安装成功：
+查看是否系统已经支持的`shell`,如果有`zsh`就表示已经存在了：
 ```
 cat /etc/shells
+```
+![](2022-08-12-16-59-57.png)
+```
+如果没有安装则可以使用`apt`安装
+sudo apt install zsh
 ```
 
 ### 配置 oh-my-zsh
@@ -65,7 +67,7 @@ copyfile SRC
 copypath [SRC]
 ```
 #### extract
-解决令人头秃的解压命令：
+解决令人头秃的解压命令
 
 #### omz reload
 omz下有一系列`oh my zsh`自带的命令，这一条可以快速重载`zsh`配置
