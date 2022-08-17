@@ -8,7 +8,7 @@ draft: false
 categories: CLI
 tags: [zsh, oh-my-zsh, 命令行, 提高效率]
 # lastmod from Stack
-lastmod: 2022-08-12
+lastmod: 2022-08-17
 # lastmod: 11:30:38 AM
 license: false
 links:
@@ -83,3 +83,16 @@ echo "quote|cowsay" >> ~/.zshrc
 ```
 每次打开终端效果如下：
 ![](2022-08-12-16-52-11.png)
+
+### bracketed paste mode
+通过该模式， `zsh`终端可以辨认出内容来自于输入还是粘贴。
+bind-key 可以看到 zsh 绑定的快捷键，"^V" quoted-insert
+如果通过 crtl+V 绑定成输出的化为有快捷键冲突，参考
+[](https://superuser.com/questions/1532688/pasting-required-text-into-terminal-emulator-results-in-200required-text)
+[](https://cirw.in/blog/bracketed-paste)
+
+还是使用 `shift+crtl+v` 来进行复制比较好
+
+bindkey 可以显示`zsh`所有的快捷键，
+[keybind详解](http://mindonmind.github.io/notes/linux/zsh_bindkeys.html)
+CSI 序列
