@@ -123,4 +123,17 @@ loading="lazy"
 class="gallery-image"
 data-flex-grow="147"
 data-flex-basis="353px"
->&lt;/p></description></item></channel></rss>
+>&lt;/p>
+&lt;h3 id="bracketed-paste-mode">bracketed paste mode&lt;/h3>
+&lt;p>通过该模式， &lt;code>zsh&lt;/code>终端可以辨认出内容来自于输入还是粘贴。
+bind-key 可以看到 zsh 绑定的快捷键，&amp;quot;^V&amp;quot; quoted-insert
+如果通过 crtl+V 绑定成输出的化为有快捷键冲突，参考
+&lt;a class="link" href="https://superuser.com/questions/1532688/pasting-required-text-into-terminal-emulator-results-in-200required-text" target="_blank" rel="noopener"
+>&lt;/a>
+&lt;a class="link" href="https://cirw.in/blog/bracketed-paste" target="_blank" rel="noopener"
+>&lt;/a>&lt;/p>
+&lt;p>还是使用 &lt;code>shift+crtl+v&lt;/code> 来进行复制比较好&lt;/p>
+&lt;p>bindkey 可以显示&lt;code>zsh&lt;/code>所有的快捷键，
+&lt;a class="link" href="http://mindonmind.github.io/notes/linux/zsh_bindkeys.html" target="_blank" rel="noopener"
+>keybind详解&lt;/a>
+CSI 序列&lt;/p></description></item><item><title/><link>https://BeyondSword.github.io/p/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://BeyondSword.github.io/p/</guid><description>&lt;p>打开外部终端：crtl+shift+c&lt;/p></description></item></channel></rss>
